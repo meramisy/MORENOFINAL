@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background-color: #fff;
+}
+
+
+.about-section {
+    background: url('usbg.png') no-repeat center center;
+    background-size: cover; 
+    background-color: #fff;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto; 
+    position: relative; 
+}
+
+
+.inner-container {
+    width: 55%; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 50px; 
+    margin: 0 auto; 
+    z-index: 1; 
+    max-width: 900px; 
+}
+
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.text {
+    font-size: 13px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    word-wrap: break-word; 
+}
+
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; 
+}
+
+.main-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #f4a261;
+}
+
+
+.main-footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.main-footer a {
+    color: #f4a261;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: text-decoration 0.3s ease;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .inner-container {
+        padding: 50px;
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-section {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
+    }
+}
+/* General Styles Remain Unchanged */
+
+/* Tablet Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .about-section {
+        background-size: cover;
+        padding: 50px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .inner-container {
+        width: 90%; /* Increase width to fit more content */
+        padding: 40px; /* Reduce padding */
+    }
+
+    .inner-container h1 {
+        font-size: 24px; /* Adjust heading font size */
+    }
+
+    .text {
+        font-size: 12px; /* Smaller font size for readability */
+        line-height: 24px; /* Adjust line height */
+    }
+
+    .skills {
+        flex-direction: column; /* Stack skills vertically */
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 12px; /* Smaller font size for links */
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .about-section {
+        padding: 20px; /* Minimal padding for very small screens */
+    }
+
+    .inner-container {
+        padding: 30px; /* Further reduce padding */
+    }
+
+    .inner-container h1 {
+        font-size: 20px; /* Further adjust heading font size */
+    }
+
+    .text {
+        font-size: 11px; /* Smaller font size for very small screens */
+        line-height: 20px; /* Compact line height */
+    }
+
+    .skills {
+        font-size: 11px; /* Adjust skill font size */
+    }
+
+    .main-header h1 {
+        font-size: 18px; /* Adjust header font size */
+    }
+
+    .main-footer {
+        font-size: 12px; /* Smaller footer text */
+    }
+
+    .nav-bar ul {
+        gap: 5px; /* Minimal spacing between links */
+    }
+}

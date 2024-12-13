@@ -1,0 +1,100 @@
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; 
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+p {
+    font-size: 1.2rem; 
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        text-align: center; /* Center header content */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Adjust the font size for mobile */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center; /* Center nav items */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space out links for easy clicking */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding for mobile */
+    }
+}
+
+/* Small screen mobile adjustments */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Reduce nav item font size for very small screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size for small screens */
+    }
+}
